@@ -16,6 +16,11 @@
 		DA580071285A79DF00CAA6BB /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA580070285A79DE00CAA6BB /* GenreCell.swift */; };
 		DA580073285B026D00CAA6BB /* GenresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA580072285B026D00CAA6BB /* GenresViewModel.swift */; };
 		DAF9FC41285B0B8300242489 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC40285B0B8300242489 /* Helpers.swift */; };
+		DAF9FC43285B519000242489 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC42285B519000242489 /* Store.swift */; };
+		DAF9FC46285B520400242489 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC45285B520400242489 /* StoreViewModel.swift */; };
+		DAF9FC48285B524500242489 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC47285B524500242489 /* StoreCell.swift */; };
+		DAF9FC4A285B582400242489 /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC49285B582400242489 /* StoresView.swift */; };
+		DAF9FC4C285B58E200242489 /* GenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC4B285B58E200242489 /* GenresView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		DA580070285A79DE00CAA6BB /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		DA580072285B026D00CAA6BB /* GenresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewModel.swift; sourceTree = "<group>"; };
 		DAF9FC40285B0B8300242489 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DAF9FC42285B519000242489 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DAF9FC45285B520400242489 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		DAF9FC47285B524500242489 /* StoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		DAF9FC49285B582400242489 /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
+		DAF9FC4B285B58E200242489 /* GenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 			children = (
 				DA58006C285A745800CAA6BB /* Game.swift */,
 				DA58006E285A75D700CAA6BB /* Genre.swift */,
+				DAF9FC42285B519000242489 /* Store.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				DA580072285B026D00CAA6BB /* GenresViewModel.swift */,
+				DAF9FC45285B520400242489 /* StoreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -101,7 +113,10 @@
 		DA58006B285A744500CAA6BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9FC4B285B58E200242489 /* GenresView.swift */,
 				DA580070285A79DE00CAA6BB /* GenreCell.swift */,
+				DAF9FC49285B582400242489 /* StoresView.swift */,
+				DAF9FC47285B524500242489 /* StoreCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,11 +192,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA58005D285A741300CAA6BB /* ContentView.swift in Sources */,
+				DAF9FC48285B524500242489 /* StoreCell.swift in Sources */,
+				DAF9FC46285B520400242489 /* StoreViewModel.swift in Sources */,
 				DAF9FC41285B0B8300242489 /* Helpers.swift in Sources */,
+				DAF9FC4A285B582400242489 /* StoresView.swift in Sources */,
 				DA58006F285A75D700CAA6BB /* Genre.swift in Sources */,
+				DAF9FC43285B519000242489 /* Store.swift in Sources */,
 				DA58006D285A745800CAA6BB /* Game.swift in Sources */,
 				DA580071285A79DF00CAA6BB /* GenreCell.swift in Sources */,
 				DA580073285B026D00CAA6BB /* GenresViewModel.swift in Sources */,
+				DAF9FC4C285B58E200242489 /* GenresView.swift in Sources */,
 				DA58005B285A741300CAA6BB /* GamesDetailsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

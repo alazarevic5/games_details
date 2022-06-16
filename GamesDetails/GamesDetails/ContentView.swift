@@ -9,31 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel = GenresViewModel()
-    
     var body: some View {
         NavigationView {
             ZStack {
-            Color(hex: "#e3edfc").edgesIgnoringSafeArea(.all)
-            ScrollView {
-                Divider().frame(height: 2).background(.black)
-                VStack {
-                    Text("Genres:").font(.title).foregroundColor(.blue).fontWeight(.bold).shadow(color: .black, radius: 15, x: 0, y: 5)
-                    ScrollView (.horizontal) {
-                        HStack {
-                            ForEach (viewModel.genres.results) {genre in
-                                GenreCell(genre: genre).frame(width: 150, height: 150).cornerRadius(10)
-                            }
-                            
-                        }
-                    }.padding()
+                LinearGradient(gradient: Gradient(colors: [Color.init(hex: "#bde4ff"), Color.init(hex: "#bdccff")]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+                ScrollView {
+                    Divider().frame(height: 2).background(.black)
+                    VStack {
+                        GenresView()
+                        StoresView()
+                    }
                 }
             }
-            }
-                .navigationTitle("Games")
-                .onAppear {
-                    self.viewModel.fetchGenres()
-                    }
+            .navigationTitle("Games")
+            
         }
     }
 }
