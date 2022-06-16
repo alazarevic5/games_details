@@ -8,18 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = GenresViewModel()
+    
     var body: some View {
         NavigationView {
+            ZStack {
+            Color(hex: "#e3edfc").edgesIgnoringSafeArea(.all)
             ScrollView {
+                Divider().frame(height: 2).background(.black)
                 VStack {
+                    Text("Genres:").font(.title).foregroundColor(.blue).fontWeight(.bold).shadow(color: .black, radius: 15, x: 0, y: 5)
                     ScrollView (.horizontal) {
                         HStack {
-                            GenreCell(genre: Genre(id: 1, name: "Adventure", image: "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg", games: [])).frame(width: 150, height: 150).cornerRadius(10)
+                            ForEach (viewModel.genres.results) {genre in
+                                GenreCell(genre: genre).frame(width: 150, height: 150).cornerRadius(10)
+                            }
+                            
                         }
                     }.padding()
                 }
             }
+            }
                 .navigationTitle("Games")
+                .onAppear {
+                    self.viewModel.fetchGenres()
+                    }
         }
     }
 }

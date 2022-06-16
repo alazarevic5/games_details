@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+struct AllGenres: Codable {
+    var results: [Genre]
+}
+
 struct Genre: Codable, Identifiable {
     var id: Int
     var name: String
