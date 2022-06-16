@@ -1,1 +1,1 @@
-# games_details
+# Games details
