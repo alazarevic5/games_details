@@ -1,1 +1,1 @@
-# Games details
+# Games explorer
