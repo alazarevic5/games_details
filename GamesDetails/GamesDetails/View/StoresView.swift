@@ -18,7 +18,6 @@ struct StoresView: View {
                 ForEach (storesViewModel.stores.results) {store in
                     StoreCell(store: store)
                 }
-                
             }
         }.padding()
             .onAppear {

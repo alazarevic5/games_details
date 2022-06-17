@@ -17,7 +17,7 @@ struct GenresView: View {
             ScrollView (.horizontal) {
                 HStack {
                     ForEach (genresViewModel.genres.results) {genre in
-                        GenreCell(genre: genre).frame(width: 150, height: 150).cornerRadius(10)
+                            GenreCell(genre: genre).frame(width: 150, height: 150).cornerRadius(10)
                     }
                     
                 }
