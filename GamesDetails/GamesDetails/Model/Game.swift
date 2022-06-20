@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Platform: Codable, Identifiable {
     var id: Int
@@ -22,6 +23,20 @@ struct Game: Codable, Identifiable {
     var description: String?
     var backgroundImage: String?
     var platforms: [PlatformInfo]?
+    
+    func getImageFromURL() -> UIImage? {
+        guard let backgroundImage = backgroundImage else {
+            return nil
+        }
+
+        guard let url = URL(string: backgroundImage) else {
+            return nil
+        }
+        guard let data = try? Data(contentsOf: url) else {
+            return nil
+        }
+        return UIImage(data: data)
+    }
     
     private enum CodingKeys : String, CodingKey {
         case id

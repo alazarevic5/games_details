@@ -17,7 +17,10 @@ struct GenresView: View {
             ScrollView (.horizontal) {
                 HStack {
                     ForEach (genresViewModel.genres.results) {genre in
+                        
+                        NavigationLink(destination: AllGamesView(games: genre.games)) {
                             GenreCell(genre: genre).frame(width: 150, height: 150).cornerRadius(10)
+                                                }
                     }
                     
                 }

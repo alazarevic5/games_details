@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.init(hex: "#bde4ff"), Color.init(hex: "#bdccff")]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+                LinearGradient(gradient: Gradient(colors: [Color.init(hex: "#bde4ff"), Color.init(hex: "#bba9d1")]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
                 ScrollView {
                     Divider().frame(height: 2).background(.black)
                     VStack {
@@ -21,7 +21,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Games")
+            .navigationTitle("Games explorer")
             
         }
     }

@@ -16,7 +16,9 @@ struct StoresView: View {
         ScrollView (.horizontal) {
             HStack {
                 ForEach (storesViewModel.stores.results) {store in
-                    StoreCell(store: store)
+                    Link(destination: URL(string: "http://"+store.domain)!) {
+                        StoreCell(store: store)
+                    }
                 }
             }
         }.padding()

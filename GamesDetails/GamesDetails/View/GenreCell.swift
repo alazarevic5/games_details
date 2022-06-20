@@ -14,7 +14,7 @@ struct GenreCell: View {
     var body: some View {
         ZStack {
             Image(uiImage: (genre.getImageFromURL() ?? UIImage(named: "genrePlaceholder"))!).resizable().frame(maxWidth: 200, maxHeight: 200).aspectRatio(contentMode: .fill).overlay(Rectangle().fill(.black).opacity(0.6))
-            Text(genre.name).foregroundColor(.white).font(.title2).shadow(color: .cyan, radius: 5, x: 0, y: 4)
+            Text(genre.name).foregroundColor(.white).font(.title2).fontWeight(.semibold).shadow(color: .cyan, radius: 5, x: 0, y: 4)
             
         }
     }

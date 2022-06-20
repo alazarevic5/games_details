@@ -16,7 +16,7 @@ struct StoreCell: View {
             Color.clear
             VStack {
                 Image(uiImage: (store.getImageFromURL() ?? UIImage(named: "genrePlaceholder"))!).resizable().clipShape(Circle()).frame(maxWidth: 120, maxHeight: 120)
-                Text(store.name).font(.title2).fontWeight(.bold).foregroundColor(Color(hex: "#064f80"))
+                Text(store.name).font(.title2).fontWeight(.semibold).foregroundColor(Color(hex: "#064f80"))
             }
         }.frame(width: 200, height: 200, alignment: .top)
     }
