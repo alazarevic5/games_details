@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA580057285A741300CAA6BB /* GamesDetails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamesDetails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA580057285A741300CAA6BB /* Games Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Games Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA58005A285A741300CAA6BB /* GamesDetailsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesDetailsApp.swift; sourceTree = "<group>"; };
 		DA58005C285A741300CAA6BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA58005E285A741800CAA6BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		DA580058285A741300CAA6BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA580057285A741300CAA6BB /* GamesDetails.app */,
+				DA580057285A741300CAA6BB /* Games Explorer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			);
 			name = GamesDetails;
 			productName = GamesDetails;
-			productReference = DA580057285A741300CAA6BB /* GamesDetails.app */;
+			productReference = DA580057285A741300CAA6BB /* Games Explorer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -360,8 +360,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alazarevic.GamesDetails;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alazarevic.GamesExplorer;
+				PRODUCT_NAME = "Games Explorer";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,8 +389,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alazarevic.GamesDetails;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alazarevic.GamesExplorer;
+				PRODUCT_NAME = "Games Explorer";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -41,7 +41,7 @@ struct Game: Codable, Identifiable {
     private enum CodingKeys : String, CodingKey {
         case id
         case name
-        case description
+        case description = "description_raw"
         case backgroundImage = "background_image"
         case platforms
     }

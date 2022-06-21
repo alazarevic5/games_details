@@ -17,14 +17,14 @@ class GamesViewModel: ObservableObject {
     
     private var task: AnyCancellable?
     
-    @Published var game: Game  = Game(id: 1, name: "Test")
+    @Published var game: Game  = Game(id: 1, name: "---")
     
     func fetchGameInfo(id: Int) {
         let fullURL = baseURL + String(id) + "?key=\(key)"
         task = URLSession.shared.dataTaskPublisher(for: URL(string: fullURL)!)
             .map { $0.data }
             .decode(type: Game.self, decoder: JSONDecoder())
-            .replaceError(with: Game(id: 1, name: "Test"))
+            .replaceError(with: Game(id: 1, name: "---"))
             .eraseToAnyPublisher()
             .receive(on: RunLoop.main)
             .assign(to: \GamesViewModel.game, on: self)
