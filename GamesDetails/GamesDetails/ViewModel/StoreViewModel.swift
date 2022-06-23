@@ -10,7 +10,7 @@ import Combine
 
 class StoreViewModel: ObservableObject {
     
-    private let url = "https://api.rawg.io/api/stores?key=c0ec8feacda2430380c08be8cba29218"
+    private let url = "https://api.rawg.io/api/stores?key=\(Config.apiKey)"
     
     private var task: AnyCancellable?
     

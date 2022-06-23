@@ -9,10 +9,8 @@ import Foundation
 import Combine
 
 class GamesViewModel: ObservableObject {
-    
-    // https://api.rawg.io/api/games/3498?key=c0ec8feacda2430380c08be8cba29218
-    
-    private let key = "c0ec8feacda2430380c08be8cba29218"
+        
+    private let key = Config.apiKey
     private let baseURL = "https://api.rawg.io/api/games/"
     
     private var task: AnyCancellable?

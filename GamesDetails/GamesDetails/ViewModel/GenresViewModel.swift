@@ -10,7 +10,7 @@ import Combine
 
 class GenresViewModel: ObservableObject {
     
-    private let url = "https://api.rawg.io/api/genres?key=c0ec8feacda2430380c08be8cba29218"
+    private let url = "https://api.rawg.io/api/genres?key=\(Config.apiKey)"
     
     private var task: AnyCancellable?
     
@@ -24,7 +24,6 @@ class GenresViewModel: ObservableObject {
             .eraseToAnyPublisher()
             .receive(on: RunLoop.main)
             .assign(to: \GenresViewModel.genres, on: self)
-        
         print(self.genres)
     }
 }

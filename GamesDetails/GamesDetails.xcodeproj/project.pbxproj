@@ -15,6 +15,7 @@
 		DA58006F285A75D700CAA6BB /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA58006E285A75D700CAA6BB /* Genre.swift */; };
 		DA580071285A79DF00CAA6BB /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA580070285A79DE00CAA6BB /* GenreCell.swift */; };
 		DA580073285B026D00CAA6BB /* GenresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA580072285B026D00CAA6BB /* GenresViewModel.swift */; };
+		DA8FF2DE2864686500940639 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FF2DD2864686500940639 /* Config.swift */; };
 		DAF9FC41285B0B8300242489 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC40285B0B8300242489 /* Helpers.swift */; };
 		DAF9FC43285B519000242489 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC42285B519000242489 /* Store.swift */; };
 		DAF9FC46285B520400242489 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9FC45285B520400242489 /* StoreViewModel.swift */; };
@@ -37,6 +38,7 @@
 		DA58006E285A75D700CAA6BB /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		DA580070285A79DE00CAA6BB /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		DA580072285B026D00CAA6BB /* GenresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewModel.swift; sourceTree = "<group>"; };
+		DA8FF2DD2864686500940639 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		DAF9FC40285B0B8300242489 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DAF9FC42285B519000242489 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		DAF9FC45285B520400242489 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				DA58006A285A743700CAA6BB /* ViewModel */,
 				DA58005A285A741300CAA6BB /* GamesDetailsApp.swift */,
 				DA58005C285A741300CAA6BB /* ContentView.swift */,
+				DA8FF2DD2864686500940639 /* Config.swift */,
 				DA58005E285A741800CAA6BB /* Assets.xcassets */,
 				DA580060285A741800CAA6BB /* Preview Content */,
 				DAF9FC40285B0B8300242489 /* Helpers.swift */,
@@ -207,6 +210,7 @@
 				DAFAF19928607B5700C1BFB6 /* GameDetailsView.swift in Sources */,
 				DAFAF195285C739900C1BFB6 /* AllGamesView.swift in Sources */,
 				DAF9FC48285B524500242489 /* StoreCell.swift in Sources */,
+				DA8FF2DE2864686500940639 /* Config.swift in Sources */,
 				DAF9FC46285B520400242489 /* StoreViewModel.swift in Sources */,
 				DAF9FC41285B0B8300242489 /* Helpers.swift in Sources */,
 				DAF9FC4A285B582400242489 /* StoresView.swift in Sources */,
